@@ -4,13 +4,23 @@
 <head>
 	<style>
 		body{font-family: Georgia, serif; font-weight: bold;}
-		.pet-im{width:auto ; height:auto ; max-height:250px; padding:20px; max-width:100%}
 		.content{display:grid; grid-template-columns:1fr 1fr;}
 		.pet-name{color: azure; font-size: 40px;padding:20px}
 		.description{color: azure; padding:20px}
 		.header{background-color:rgb(0,0,50)}
-		.image{display:grid; justify-items:center; background-color: darkslategrey; color:azure}
-		.buttons{display:grid; justify-items:center; background-color:teal; color:azure}
+		.activity-icon{max-height:40px;max-width:40px;padding:10px}
+		.activity-row{display:grid; grid-template-columns:1fr 1fr 1fr}
+
+
+		.pet-im{width:auto ; height:auto ; max-height:250px;
+					padding:20px; max-width:100%}
+		.image{display:grid; justify-items:center;
+				background-color: darkslategrey; color:azure}
+		.buttons{display:grid; justify-items:center;
+				background-color:teal; color:azure}
+		.activity-button{background-color: #B27499;border-radius:8px;
+							max-height:40px;cursor:pointer;
+							box-shadow:0 0 5px 0 grey}
 	</style>
 </head>
 
@@ -27,8 +37,22 @@
 		<div class='image'>
 			<img class='pet-im' src='./resources/neutral.jpg'>
 		</div>
-		<div class='buttons'>button area
-
+		<div class='buttons'>
+			<div class='activity-row'>
+				<img class="activity-icon" src="./resources/food.png">
+				<div class="activity-stat">100</div>
+          		<div class="activity-button">Eat meal</div>
+			</div>
+			<div class='activity-row'>
+				<img class="activity-icon" src="./resources/water.png">
+				<div class="activity-stat">100</div>
+          		<div class="activity-button">Drink water</div>
+			</div>
+			<div class='activity-row'>
+				<img class="activity-icon" src="./resources/exercise.jpg">
+				<div class="activity-stat">100</div>
+          		<div class="activity-button">Exercise</div>
+			</div>
 		</div>
 	</div>
 
