@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 
+<html>
 <head>
-
+	<style>
+		body{font-family: Georgia, serif; font-weight: bold;}
+		.pet-im{width:auto ; height:auto ; max-height:250px; padding:20px; max-width:100%}
+		.content{display:grid; grid-template-columns:1fr 1fr;}
+		.pet-name{color: azure ; padding:20px}
+		.description{color: azure ;padding:20px}
+		.header{background-color:rgb(0,0,50)}
+		.image{background-color: darkslategrey; color:azure}
+		.buttons{background-color:teal; color:azure}
+	</style>
 </head>
 
 <title>Birb!</title>
 
 <body>
-	henlo birb
+
+	<div class='header'>
+		<div class='pet-name'>Merry</div>
+		<div class='description'>A chonky boy.</div>
+	</div>
+
+	<div class='content'>
+		<div class='image'>
+			<img class='pet-im' src='./resources/neutral.jpg'>
+		</div>
+		<div class='buttons'>button area</div>
+	</div>
+
 </body>
 
 </html>
