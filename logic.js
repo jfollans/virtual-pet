@@ -1,9 +1,6 @@
-
-
 var hunger = 50;
 var hydration = 50;
 var energy = 50;
-
 
 var hungermeter = document.getElementById('hunger-meter');
 var hydrationmeter = document.getElementById('thirst-meter');
@@ -13,6 +10,7 @@ var statusimage = document.getElementById('status-image');
 
 var timeout = setTimeout(timeTick, 2000);
 
+// called every 2 seconds
 function timeTick()
 {
 	hunger -= 4;
@@ -24,6 +22,7 @@ function timeTick()
 	timeout = setTimeout(timeTick, 2000);
 }
 
+// update stats after eating
 function eat()
 {
 	hunger += 15;
@@ -32,7 +31,7 @@ function eat()
 	updateHTML();
 }
 
-
+// update stats after drinking
 function drink()
 {
 	hunger -= 5;
@@ -41,6 +40,7 @@ function drink()
 	updateHTML();
 }
 
+// update stats after exercising
 function exercise()
 {
 	hunger -= 10;
@@ -49,6 +49,7 @@ function exercise()
 	updateHTML();
 }
 
+// update the HTML stat indicators
 function updateHTML()
 {
 	hungermeter.innerHTML = hunger;
@@ -58,7 +59,7 @@ function updateHTML()
 	changeImage();
 }
 
-
+// set the status to the correct one based on our stats
 function changeImage()
 {
 	var lowestStat = Math.min(hunger, hydration, energy);
@@ -86,7 +87,7 @@ function changeImage()
 	}
 }
 
-
+// toggle interactivity, display game over and restart button
 function endGame()
 {
 	clearTimeout(timeout);
@@ -97,7 +98,7 @@ function endGame()
 	document.getElementById('endgame').classList.toggle('hidden');
 }
 
-
+// restart the game
 function restartGame()
 {
 	hunger = 50;
