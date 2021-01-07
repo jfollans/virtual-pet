@@ -21,18 +21,18 @@
 		<div class='buttons'>
 			<div class='activity-row'>
 				<img class="activity-icon" src="./resources/food.png">
-				<div class="activity-stat">100</div>
-          		<div class="activity-button">Eat meal</div>
+				<div class="activity-stat" id='hunger-meter'>50</div>
+          		<div class="activity-button" onclick='eat()'>Eat meal</div>
 			</div>
 			<div class='activity-row'>
 				<img class="activity-icon" src="./resources/water.png">
-				<div class="activity-stat">100</div>
-          		<div class="activity-button">Drink water</div>
+				<div class="activity-stat" id='thirst-meter'>50</div>
+          		<div class="activity-button" onclick='drink()'>Drink water</div>
 			</div>
 			<div class='activity-row'>
 				<img class="activity-icon" src="./resources/exercise.jpg">
-				<div class="activity-stat">100</div>
-          		<div class="activity-button">Exercise</div>
+				<div class="activity-stat" id='energy-meter'>50</div>
+          		<div class="activity-button" onclick='exercise()'>Exercise</div>
 			</div>
 		</div>
 	</div>
