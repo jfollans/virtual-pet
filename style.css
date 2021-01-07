@@ -20,3 +20,4 @@ body{font-family: Georgia, serif; font-weight: bold;}
 					box-shadow:0 0 5px 0 grey;
 					display:grid; justify-items:center;
 					align-items:center}
+.hidden {display:none}

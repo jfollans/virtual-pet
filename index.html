@@ -16,20 +16,26 @@
 
 	<div class='content'>
 		<div class='image'>
-			<img class='pet-im' src='./resources/neutral.jpg'>
+			<img class='pet-im' id='status-image' src='./resources/neutral.jpg'>
 		</div>
 		<div class='buttons'>
-			<div class='activity-row'>
+			<div class="endgame hidden" id='endgame'>
+				<div class='activity-button restart-button' id='restart-game' onclick='restartGame()'>Restart Game</div>
+				<div id='endgame-message'>Game Over :(</div>
+			</div>
+
+
+			<div class='activity-row' id='food-row'>
 				<img class="activity-icon" src="./resources/food.png">
 				<div class="activity-stat" id='hunger-meter'>50</div>
           		<div class="activity-button" onclick='eat()'>Eat meal</div>
 			</div>
-			<div class='activity-row'>
+			<div class='activity-row' id='thirst-row'>
 				<img class="activity-icon" src="./resources/water.png">
 				<div class="activity-stat" id='thirst-meter'>50</div>
           		<div class="activity-button" onclick='drink()'>Drink water</div>
 			</div>
-			<div class='activity-row'>
+			<div class='activity-row' id='exercise-row'>
 				<img class="activity-icon" src="./resources/exercise.jpg">
 				<div class="activity-stat" id='energy-meter'>50</div>
           		<div class="activity-button" onclick='exercise()'>Exercise</div>
